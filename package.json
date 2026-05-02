@@ -1,0 +1,22 @@
+{
+  "name": "bookshelf-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srikanthsathelli/bookshelf-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srikanthsathelli/bookshelf-app/issues"
+  },
+  "homepage": "https://github.com/srikanthsathelli/bookshelf-app#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
