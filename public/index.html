@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookShelf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 data-testid="page-title">📚 BookShelf</h1>
+      <p class="counter" data-testid="counter">0 books in your collection</p>
+    </header>
+
+    <section class="add-section">
+      <h2>Add a New Book</h2>
+      <form id="add-form" data-testid="add-form">
+        <input
+          type="text"
+          id="title-input"
+          data-testid="title-input"
+          placeholder="Book title"
+        />
+        <input
+          type="text"
+          id="author-input"
+          data-testid="author-input"
+          placeholder="Author"
+        />
+        <select id="status-select" data-testid="status-select">
+          <option value="to-read">To Read</option>
+          <option value="reading">Reading</option>
+          <option value="finished">Finished</option>
+        </select>
+        <button type="submit" data-testid="add-btn">Add Book</button>
+      </form>
+      <p id="error-message" data-testid="error-message" class="error hidden"></p>
+    </section>
+
+    <section class="filter-section">
+      <button class="filter-btn active" data-testid="filter-all" data-filter="all">All</button>
+      <button class="filter-btn" data-testid="filter-to-read" data-filter="to-read">To Read</button>
+      <button class="filter-btn" data-testid="filter-reading" data-filter="reading">Reading</button>
+      <button class="filter-btn" data-testid="filter-finished" data-filter="finished">Finished</button>
+    </section>
+
+    <section class="books-section">
+      <ul id="book-list" data-testid="book-list"></ul>
+      <p id="empty-state" data-testid="empty-state" class="empty hidden">
+        No books to show. Add your first book!
+      </p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
