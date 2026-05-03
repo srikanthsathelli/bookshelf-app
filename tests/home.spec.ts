@@ -23,6 +23,6 @@ test.describe('BookShelf - Home Page', () => {
 test('user can change book status', async () => {
   await home.addBook('abc', 'hello');
   await home.clickNextStatusButton('abc');
-  await expect(home.getBookStatus('abc')).toHaveText('bla bla intentional');
-});    
+  await expect(home.getBookStatus('abc')).toHaveText('Reading');
+});
 });
