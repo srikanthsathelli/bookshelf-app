@@ -25,4 +25,4 @@ test('user can change book status', async () => {
   await home.clickNextStatusButton('abc');
   await expect(home.getBookStatus('abc')).toHaveText('bla bla intentional');
 });    
-});
+});     
